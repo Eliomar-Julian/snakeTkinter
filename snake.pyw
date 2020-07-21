@@ -45,7 +45,7 @@ class Jogo:
 
     def snake(self):
         self.cobra = Frame(
-            self.mapa, width=SIZE, height=SIZE, bg="white"
+            self.mapa, width=SIZE, height=SIZE, bg="blue"
         )
         self.cobra.place(x=0, y=0)
 
@@ -60,7 +60,10 @@ class Jogo:
         cor = [
             "white", "gray", "black",
             "pink", "blue", "purple",
-            "red", "violet", "yellow"
+            "red", "violet", "yellow",
+            "yellow", "orange", "pink",
+            "#9900ff", "#cccc00", "#33bbff",
+            "#4d4d00", "#ff80b3", "#77b300"
         ]
         self.fruit = Frame(
             self.mapa, width=SIZE, height=SIZE, bg=choice(cor)
@@ -120,7 +123,7 @@ class Jogo:
             self.fruit.destroy()
             self.place()
             self.food()
-            SNAKE.append(Frame(self.mapa, width=SIZE, height=SIZE, bg="white"))
+            SNAKE.append(Frame(self.mapa, width=SIZE, height=SIZE, bg=str(self.fruit['bg'])))
         if colisao == "morreu":
             self.game_over()
             return
