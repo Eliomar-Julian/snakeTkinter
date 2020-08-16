@@ -1,7 +1,7 @@
 # snakeTkinter
 
-### um joguinho snake dirvertido feito em tkinter (Python3)
+### a snake game played in tkinter (Python3)
 
-> leve e simples
+> Light and simple
 
-> poucos recurso
+> few feature
