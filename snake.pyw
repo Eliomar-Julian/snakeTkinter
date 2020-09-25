@@ -1,6 +1,5 @@
 from tkinter import *
 from random import (choice)
-from PIL import Image, ImageTk
 
 SIZE = 20
 KEY = str("")
